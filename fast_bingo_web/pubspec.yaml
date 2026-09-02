@@ -1,0 +1,48 @@
+name: fast_bingo_web
+description: "Real-time bingo game Telegram Mini App"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_telegram_miniapp: ^0.0.12
+  dio: ^5.4.0
+  web_socket_channel: ^3.0.0
+  flutter_secure_storage: ^9.2.0
+  provider: ^6.1.0
+  google_fonts: ^6.2.0
+  audioplayers: ^6.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/nums/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  min_sdk_android: 21 # required for adaptive icons
+
+  # Optional: Adaptive icons for modern Android (Android 8.0+)
+  # adaptive_icon_background: "#FFFFFF" # or hex color
+  # adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+
+  # Optional: Web & Desktop support
+  web:
+    generate: true
+    image_path: "assets/logo.png"
