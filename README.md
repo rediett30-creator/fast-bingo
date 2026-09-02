@@ -14,10 +14,6 @@ out live over a websocket, and the server is the one deciding who actually
 won — not the client. Built the backend with FastAPI and the frontend with
 Flutter, both talking to each other over REST and a websocket connection.
 
-I built this mostly to get comfortable with real-time systems — websockets,
-race conditions, the kind of problems that don't really show up when you're
-building a typical CRUD app.
-
 ## How it works
 
 - Logging in happens through Telegram itself, no signup form. The app reads
