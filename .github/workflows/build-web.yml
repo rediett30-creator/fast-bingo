@@ -37,6 +37,3 @@ jobs:
         with:
           name: fast-bingo-web
           path: fast_bingo_web/build/web
-git add fast_bingo_web/lib/config.dart .github/workflows/build-web.yml
-git commit -m "Configure backend and add web build workflow"
-git push origin main
